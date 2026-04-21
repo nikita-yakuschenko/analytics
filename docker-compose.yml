@@ -6,8 +6,8 @@ services:
       dockerfile: Dockerfile
     image: izhs-dashboard:latest
     restart: unless-stopped
-    ports:
-      - "3000:3000"
+    expose:
+      - "3000"
     healthcheck:
       test:
         [
